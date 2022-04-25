@@ -18,7 +18,7 @@ singularity build --sandbox openpose_env openpose_env_04.sif
 Once the environment is created, clone the openpose repository and place your singularity environment inside the openpose folder
 ```
 git clone https://github.com/CMU-Perceptual-Computin-Lab/openpose
-mv openpose_env_04_2022 openpose/
+mv openpose_env openpose/
 cd openpose
 ```
 Then you can launch the singularity environment (-B information is for the directories present in your VM that you need to access. In my case, the openpose folder is located in data, my images in scratch)
