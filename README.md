@@ -37,5 +37,5 @@ Once the installation is done, enter exit. Then you can create your .sh file to 
 #SBATCH --mem=600GB
 #SBATCH --time=80:00:00
 
-singularity shell -B /data -B /scratch openpose_env ./build/examples/openpose/openpose.bin --hand --image_dir ~/scratch/dataset --write_json ~/scratch/output_json --render_pose 0 --display 0 --model_pose BODY_25
+singularity shell --nv -B /data -B /scratch openpose_env ./build/examples/openpose/openpose.bin --hand --image_dir ~/scratch/dataset --write_json ~/scratch/output_json --render_pose 0 --display 0 --model_pose BODY_25
 ```
